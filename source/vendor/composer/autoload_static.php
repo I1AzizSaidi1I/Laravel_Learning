@@ -499,6 +499,7 @@ class ComposerStaticInitfac753ae2702317b354e7eb283f28cbc
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\ManageTickets' => __DIR__ . '/../..' . '/app/Http/Controllers/ManageTickets.php',
         'App\\Http\\Controllers\\authenticationController' => __DIR__ . '/../..' . '/app/Http/Controllers/authenticationController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',

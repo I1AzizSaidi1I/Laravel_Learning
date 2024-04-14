@@ -17,6 +17,7 @@ class CreateTicketsTable extends Migration
             $table->id();
             $table->string('destination');
             $table->integer('price');
+            $table->integer('status');
             $table->timestamps();
         });
     }

@@ -9,7 +9,11 @@ class Tickets extends Model
 {
     use HasFactory;
 
-
+    protected $fillable = [
+        'destination',
+        'price',
+        'status',
+    ];
 
 
 }

@@ -18,11 +18,16 @@ class ManageTickets extends Controller
      */
     public function index()
     {
-        return view('home.index', ['ticket'=> Tickets::all()]);
+        return view('home.showTickets', [
+            'tickets' => Tickets::all()
+        ]);
     }
 
-    public function show()
+    public function show($id)
     {
-        return ['ticket' => Tickets::all()];
+        return view('home.showTickets', [
+            'tickets' => Tickets::findOrFail($id)
+        ]);
     }
 }
+
