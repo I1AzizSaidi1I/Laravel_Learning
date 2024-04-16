@@ -4,8 +4,10 @@
 @section('title')
     Register
 @endsection
+@section('title','Register')
+
 @section('content')
-    <form action="{{ route('register.create') }}" method="post">
+    <form action="{{ route('register.store') }}" method="post">
     <div class="hold-transition login-page">
     <div class="register-box">
         <div class="card card-outline card-primary">

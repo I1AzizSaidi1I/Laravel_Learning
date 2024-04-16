@@ -21,9 +21,9 @@ class authenticationController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function create()
+    public function register()
     {
-        return view('auth.cre');
+        return view('auth.create');
     }
 
     /**

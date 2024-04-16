@@ -13,10 +13,11 @@ Route::get('/home', function () {
 
 
 Route::get('/login', [\App\Http\Controllers\authenticationController::class , 'login'])->name('login');
-//Route::get('/register', [\App\Http\Controllers\authenticationController::class , 'create'])->name('register');
-Route::resource('create', \App\Http\Controllers\authenticationController::class)->names([
-    'create' => 'register.create'
-]);
+Route::get('/register', [\App\Http\Controllers\authenticationController::class , 'register'])->name('register');
+Route::resource('create', \App\Http\Controllers\authenticationController::class)->only(['create','index','show','store']);
+
+
+
 
 
 Route::get('/myTickets', [\App\Http\Controllers\ManageTickets::class , 'index'])->name('tickets');

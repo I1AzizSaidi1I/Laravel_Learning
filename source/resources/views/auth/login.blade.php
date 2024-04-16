@@ -1,4 +1,5 @@
 @extends('layout.app')
+@section('title','Login')
 
 @section('content')
     <div class="hold-transition login-page">
@@ -67,6 +68,7 @@
         <!-- /.card -->
     </div>
     </div>
+
 @endsection
 
 
