@@ -1,16 +1,21 @@
-@extends('layout.app')
 
+
+@extends('layout.app')
+@section('title')
+    Register
+@endsection
 @section('content')
+    <form action="{{ route('register.create') }}" method="post">
     <div class="hold-transition login-page">
     <div class="register-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+                <a href="#" class="h1"><b>Admin</b>LTE</a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Register a new membership</p>
 
-                <form action="../../index.html" method="post">
+                <form action="#" method="post">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Full name">
                         <div class="input-group-append">
@@ -77,4 +82,6 @@
         </div><!-- /.card -->
     </div>
     </div>
+    </form>
 @endsection
+

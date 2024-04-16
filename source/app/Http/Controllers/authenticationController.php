@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\User;
 class authenticationController extends Controller
 {
     /**
@@ -19,11 +19,11 @@ class authenticationController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('auth.cre');
     }
 
     /**
@@ -48,11 +48,7 @@ class authenticationController extends Controller
         return view('auth.login');
 
     }
-    public function register()
-    {
-        return view('auth.register');
 
-    }
     /**
      * Show the form for editing the specified resource.
      *

@@ -1,6 +1,9 @@
 @extends('layout.app')
 
 @section('content')
+    <div class="hold-transition sidebar-mini">
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
@@ -61,5 +64,5 @@
         </div>
     </div>
 </div>
-
+    </div>
 @endsection
